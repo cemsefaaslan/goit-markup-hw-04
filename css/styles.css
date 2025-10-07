@@ -241,6 +241,7 @@ font-family: inherit;
 .team {
 background-color: #F4F4FD;
 padding: 0 120px;
+
 }
 
 .team1 {
@@ -256,6 +257,8 @@ padding: 0 120px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    justify-content: center;
 
 }
 
@@ -271,7 +274,9 @@ padding: 0 120px;
     border-radius: 8px;
     padding: 16px;
     flex: 1;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
 
 .team p {
     font-family: inherit;
@@ -279,6 +284,8 @@ padding: 0 120px;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-top: 8px;
+    justify-content: center;
 }
 
 .socials-box {
@@ -286,6 +293,10 @@ padding: 0 120px;
     justify-content: center;
     gap: 16px;
     margin-top: 16px;
+}
+
+.team img {
+    transform: scale(1.13);
 }
 
 .social-icon {
@@ -298,6 +309,10 @@ padding: 0 120px;
     justify-content: center;
 }
 
+.social-icon:hover {
+    background-color: #404BBF;
+}
+
 .social-icon svg {
     width: 16px;
     height: 16px;
@@ -306,7 +321,7 @@ padding: 0 120px;
     align-items: center;
     flex-shrink: 0;
     overflow: visible;
-    transform: translate(-4px, -4px) scale(0.5);
+   
 }
 
 .portfolio {
@@ -318,7 +333,7 @@ padding: 0 120px;
 
 }
 
-.portfolio-item {
+.image-overlay {
     position: relative;
         overflow: hidden;
 }
@@ -340,6 +355,11 @@ padding: 40px 32px 164px 32px;
 .portfolio-item:hover .overlay {
     transform: translateY(0);
 }
+
+.portfolio-item:hover {
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 
 .portfolio-section {
     padding-bottom: 120px;
@@ -493,12 +513,15 @@ display: flex;
                 }
         
                 .social-icon-footer svg {
-                    width: 16px;
-                    height: 16px;
+                    width: 24px;
+                    height: 24px;
                     fill: #f4f4fd;
                     justify-content: center;
                     align-items: center;
                     flex-shrink: 0;
                     overflow: visible;
-                    transform: translate(-6px, -6px) scale(0.75);
+                }
+
+                .social-icon-footer:hover {
+                    background-color: #31D0AA;
                 }
